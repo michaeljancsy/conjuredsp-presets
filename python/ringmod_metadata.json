@@ -1,0 +1,6 @@
+{
+  "author": "ConjureDSP",
+  "category": "Modulation",
+  "description": "Ring modulation multiplying the signal by a carrier oscillator.",
+  "name": "Ring Modulator"
+}

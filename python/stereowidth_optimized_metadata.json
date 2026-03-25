@@ -1,0 +1,6 @@
+{
+  "author": "ConjureDSP",
+  "category": "Utility",
+  "description": "Optimized stereo width control using pre-allocated mid/side buffers for zero per-callback allocations.",
+  "name": "Stereo Width Optimized"
+}

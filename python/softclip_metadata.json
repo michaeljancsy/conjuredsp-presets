@@ -1,0 +1,6 @@
+{
+  "author": "ConjureDSP",
+  "category": "Distortion",
+  "description": "Soft clipping saturation using tanh waveshaping.",
+  "name": "Soft Clip"
+}

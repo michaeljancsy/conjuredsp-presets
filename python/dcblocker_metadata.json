@@ -1,0 +1,6 @@
+{
+  "author": "ConjureDSP",
+  "category": "Utility",
+  "description": "Removes DC offset from the signal using a high-pass filter.",
+  "name": "DC Blocker"
+}

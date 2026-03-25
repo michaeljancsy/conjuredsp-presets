@@ -1,0 +1,6 @@
+{
+  "author": "ConjureDSP",
+  "category": "Utility",
+  "description": "Copies input to output unchanged. Useful as a starting template.",
+  "name": "Passthrough"
+}

@@ -1,0 +1,6 @@
+{
+  "author": "ConjureDSP",
+  "category": "Modulation",
+  "description": "Phaser using cascaded all-pass filters with LFO modulation.",
+  "name": "Phaser"
+}

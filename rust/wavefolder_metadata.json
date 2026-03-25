@@ -1,0 +1,6 @@
+{
+  "author": "ConjureDSP",
+  "category": "Distortion",
+  "description": "Folds the waveform back on itself for harmonic-rich distortion.",
+  "name": "Wavefolder"
+}

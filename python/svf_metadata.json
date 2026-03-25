@@ -1,0 +1,6 @@
+{
+  "author": "ConjureDSP",
+  "category": "Filter",
+  "description": "Resonant state variable filter with low-pass, high-pass, and band-pass modes.",
+  "name": "State Variable Filter"
+}

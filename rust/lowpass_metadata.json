@@ -1,0 +1,6 @@
+{
+  "author": "ConjureDSP",
+  "category": "Filter",
+  "description": "Simple 1-pole low-pass filter with cutoff control.",
+  "name": "Low-Pass Filter"
+}

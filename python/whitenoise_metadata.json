@@ -1,0 +1,6 @@
+{
+  "author": "ConjureDSP",
+  "category": "Generator",
+  "description": "White noise generator with volume control. Ignores input signal.",
+  "name": "White Noise"
+}

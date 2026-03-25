@@ -1,0 +1,6 @@
+{
+  "author": "ConjureDSP",
+  "category": "Dynamics",
+  "description": "Silences signal below a threshold with attack and release smoothing.",
+  "name": "Noise Gate"
+}

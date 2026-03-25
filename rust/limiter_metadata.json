@@ -1,0 +1,6 @@
+{
+  "author": "ConjureDSP",
+  "category": "Dynamics",
+  "description": "Brickwall limiter that prevents output from exceeding a threshold.",
+  "name": "Limiter"
+}
