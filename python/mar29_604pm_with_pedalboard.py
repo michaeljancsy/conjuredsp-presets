@@ -4,7 +4,6 @@ from conjuredsp.params import param
 PARAMS = {
     "width": param(0, 2, unit="x", default=1),
 }
-import pedalboard
 
 
 def process(inputs, outputs, frame_count, sample_rate, params):
