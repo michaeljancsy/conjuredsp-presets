@@ -1,4 +1,4 @@
-import numpy as np
+asdfimport numpy as np
 
 PARAMS = {
     "gain": {"min": -24.0, "max": 12.0, "unit": "dB", "default": 0.0},
