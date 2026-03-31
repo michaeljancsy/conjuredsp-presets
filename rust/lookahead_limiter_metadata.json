@@ -1,0 +1,6 @@
+{
+  "author": "ConjureDSP",
+  "category": "Dynamics",
+  "description": "Limiter with lookahead buffer for transparent peak limiting.",
+  "name": "Lookahead Limiter"
+}
