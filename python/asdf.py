@@ -1,43 +1,26 @@
 import numpy as np
-from conjuredsp.params import param
 
 PARAMS = {
-    "width": param(0, 2, unit="x", default=1),
+    "gain": {"min": -24.0, "max": 12.0, "unit": "dB", "default": 0.0},
 }
 
 
 def process(inputs, outputs, frame_count, sample_rate, params):
     """
-    Stereo Width — mid/side stereo width control.
+    Process audio buffers.
 
-    Encodes the stereo signal into mid (L+R) and side (L-R) components,
-    scales the side component by the width factor, then decodes back to
-    L/R. At width=0 the output is mono, at width=1 the signal is
-    unchanged, and above 1.0 the stereo image is exaggerated.
-    For mono input, the signal passes through unchanged.
+    Called once per audio render callback with pre-allocated numpy arrays.
+    Write your processed audio into outputs[ch][:frame_count].
 
-    Params:
-        width: Stereo width (0.0 = mono, 1.0 = normal, 2.0 = extra wide)
+    Args:
+        inputs:      list of numpy.float32 arrays, one per channel
+        outputs:     list of numpy.float32 arrays, one per channel
+        frame_count: number of valid samples this callback
+        sample_rate: current sample rate in Hz (e.g. 44100.0)
+        params:      dict of actual parameter values keyed by PARAMS name
     """
-    width = params["width"]
+    gain_db = params["gain"]
+    gain = 10.0 ** (gain_db / 20.0)
 
-    n_ch = len(inputs)
-
-    if n_ch < 2:
-        # Mono: passthrough
-        outputs[0][:frame_count] = inputs[0][:frame_count]
-        return
-
-    left = inputs[0][:frame_count]
-    right = inputs[1][:frame_count]
-
-    # Encode to mid/side
-    mid = (left + right) * 0.5
-    side = (left - right) * 0.5
-
-    # Scale side component
-    side_scaled = side * width
-
-    # Decode back to L/R
-    outputs[0][:frame_count] = mid + side_scaled
-    outputs[1][:frame_count] = mid - side_scaled
+    for ch in range(len(inputs)):
+        np.multiply(inputs[ch][:frame_count], gain, out=outputs[ch][:frame_count])
