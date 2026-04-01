@@ -8,7 +8,7 @@ PARAMS = {
     "mix": mix(default=1.0),
 }
 
-model = load_model("tone3000://19/51")
+model = load_model("tone3000://19/51") 
 
 def process(inputs, outputs, frame_count, sample_rate, params):
     in_gain = 10 ** (params["input_gain"] / 20.0)
