@@ -1,3 +1,34 @@
+"""
+Here's what
+  the preset does:                
+                           
+  - Left channel — Marshall JCM800
+   2203 Modified ("Bad Boys"
+  blend, SM57 mic): classic       
+  British crunch, warm midrange,  
+  natural sag                     
+  - Right channel — ENGL SE E670: 
+  tight, aggressive high-gain,    
+  more modern and clinical
+                                  
+  Both amps get the same input    
+  (channel 0), so a mono guitar
+  comes out wide in stereo with   
+  two distinct amp characters.
+  Classic "double-track" feel
+  without actually doubling.
+
+  Parameters:
+  - input_gain — drive into the
+  amp models (push for more       
+  saturation)              
+  - output_gain — trim the output 
+  level                          
+  - mix — blend dry/wet (keep at  
+  1.0 for full amp sound)
+  """
+
+
 import numpy as np
 from conjuredsp.nam import load_model
 from conjuredsp import db, mix
