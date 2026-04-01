@@ -1,4 +1,23 @@
-
+"""
+Preset JCM800 All-In saved.
+  Here's what you've got:         
+                                  
+  - Input — pre-amp input gain    
+  (dB)                            
+  - Drive — extra gain into the   
+  NAM model (0–24 dB) for more    
+  saturation                      
+  - Tone — lowpass filter after   
+  the amp model (800 Hz–16 kHz) to
+   tame brightness                
+  - Output — master volume (dB)   
+  - Mix — dry/wet blend (defaults
+  to 100% wet)                    
+   
+  The NAM model is the Marshall   
+  JCM800 2203 Modified (All-In DI)
+   by 2dor.
+"""
 from conjuredsp import db, mix, freq, toggle
 from conjuredsp.nam import load_model
 from conjuredsp import BiquadCoeffs, Biquad, db_to_gain, soft_clip
