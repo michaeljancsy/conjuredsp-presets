@@ -1,6 +1,7 @@
 use conjuredsp::*;
 setup!();
-nam!("tone3000://34/82524");
+conjuredsp::nam!("tone3000://44209/234539");
+
 
 params! {
     INPUT_GAIN = db().default(0.0),
