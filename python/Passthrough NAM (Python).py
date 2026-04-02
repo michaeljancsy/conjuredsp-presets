@@ -7,8 +7,8 @@ PARAMS = {
     "mix": mix(default=1.0),
 }
 
-# model = load_model("tone3000://26/83293") # orange rockerverb crunch
-model = load_model("tone3000://60092/351559") # approximate passthrough
+model = load_model("tone3000://26/83293") # orange rockerverb crunch
+# model = load_model("tone3000://60092/351559") # approximate passthrough
 
 
 def process(inputs, outputs, frame_count, sample_rate, params):
