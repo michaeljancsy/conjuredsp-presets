@@ -1,7 +1,7 @@
 use conjuredsp::*;
 setup!();
 // nam!("tone3000://60092/351559");
-conjuredsp::nam!("tone3000://28135/110358");
+nam!("tone3000://28135/110358"); // passthrough
 
 
 params! {
